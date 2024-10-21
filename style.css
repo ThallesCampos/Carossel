@@ -1,0 +1,115 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #dbc7ac;
+}
+
+h1 {
+    color: #333;
+    font-size: 3em;
+    text-align: center;
+}
+
+.container {
+    width: 800px;
+    height: 460px;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin-bottom: 20px;
+}
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+.bar {
+    background-color: #faebd7;
+    width: 30px;
+    height: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.bar:hover {
+    background-color: #a52a2a;
+    width: 50px;
+}
+
+.bar::before {
+    background-color: #faebd7;
+    width: 30px;
+}
+
+.navegacao {
+    display: flex;
+    bottom: 20px;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+}
+
+#imagem2:checked ~ .navegacao{
+    background-color: #8a2be2;
+}
+
+input{
+    display: none;
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 700%;
+}
+
+.imagem {
+    width: 14.28571428571429%;
+    transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#imagem1:checked ~ .img1 {
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1 {
+    margin-left: -14.28571428571429%;
+}
+
+#imagem3:checked ~ .img1 {
+    margin-left: -28.57142857142857%;
+}
+
+#imagem4:checked ~ .img1 {
+    margin-left: -42.85714285714286%;
+}
+
+#imagem5:checked ~ .img1 {
+    margin-left: -57.14285714285714%;
+}
+
+#imagem6:checked ~ .img1 {
+    margin-left: -71.42857142857143%;
+}
+
+#imagem7:checked ~ .img1 {
+    margin-left: -85.71428571428571%;
+}
+
+footer {
+    background-color: #333;
+    color: #f0f0f0;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
