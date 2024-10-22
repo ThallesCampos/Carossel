@@ -113,3 +113,20 @@ footer {
     align-items: center;
     text-align: center;
 }
+
+@media (max-width:768px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        width: 440px;
+        height: 260px;
+    }
+
+    footer {
+        padding: 5px 0;
+        margin-top: 10px;
+    }
+}
